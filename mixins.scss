@@ -1,0 +1,11 @@
+@mixin inline-block($margin : 10px) {
+  display: inline-block;
+  margin-left: $margin;
+}
+
+
+@mixin blue-text {
+  font-family: Arial;
+  font-weight: bold;
+  color:#0000ff;
+}

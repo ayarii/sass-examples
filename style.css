@@ -1,0 +1,66 @@
+.m-1 {
+  margin: 0 0.25rem;
+}
+
+.m-2 {
+  margin: 0 0.5rem;
+}
+
+.m-3 {
+  margin: 0 0.75rem;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+.btn {
+  background: #ff752f;
+  border-radius: 5px;
+  color: #ffb60b;
+}
+
+#box {
+  font-weight: bold;
+  font-family: Algerian;
+  display: inline-block;
+  margin-left: 10px;
+  width: 50%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none li;
+  text-decoration: none;
+}
+nav ul li a {
+  font-weight: bold;
+}
+nav ul li a :hover {
+  color: #ff752f;
+}
+
+.button, .button-alert a {
+  display: inline-block;
+  color: #ff752f;
+  text-align: center;
+  border: solid 2px #ff752f;
+}
+
+.button-alert a {
+  border-radius: 4px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #0000ff;
+}
+
+/*# sourceMappingURL=style.css.map */

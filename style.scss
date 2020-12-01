@@ -1,0 +1,72 @@
+@import "mixins";
+
+$primary-color: #ff752f;
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none li;
+    text-decoration: none;
+    li {
+      a {
+        font-weight: bold;
+        :hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  color: $primary-color;
+  text-align: center;
+  border: solid 2px $primary-color;
+}
+
+.button-alert {
+  a {
+    @extend .button;
+    border-radius: 4px;
+    @include blue-text;
+  }
+}
+
+#box {
+  font: {
+    weight: bold;
+    family: Algerian;
+  }
+  @include inline-block();
+  width: percentage(0.5);
+}
+
+@function function_name($para1,$para2) {
+
+  @return $para1+$para2;
+
+}
+
+@for $i from 1 through 3 {
+  .m-#{$i} {
+    margin: 0 ($i*0.25rem);
+  }
+}
+
+$list-colors: "blue", "red", "green";
+@each $color in $list-colors {
+  .btn-#{$color} {
+    background-color: #{$color};
+  }
+}
+
+.btn {
+  background: $primary-color;
+  border-radius: 5px;
+  @if lightness($primary-color)>50% {
+    color: #ffb60b;
+  } @else {
+    color: #ff1f17;
+  }
+}
